@@ -24,6 +24,17 @@
             <artifactId>cucumber-testng</artifactId>
             <version>6.9.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.9.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -32,9 +43,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <suiteXMLFiles>
-                        <suiteXmlFiles>testng.xml</suiteXmlFiles>
-                    </suiteXMLFiles>
+<!--                    <suiteXMLFiles>-->
+<!--                        <suiteXmlFiles>testng.xml</suiteXmlFiles>-->
+<!--                    </suiteXMLFiles>-->
                 </configuration>
             </plugin>
         </plugins>
