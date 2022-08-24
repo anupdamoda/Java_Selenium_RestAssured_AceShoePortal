@@ -3,10 +3,14 @@ package StepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Steps {
     @Given("the user is on login page")
     public void the_user_is_on_login_page() {
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver.exe");
+        ChromeDriver driver=new ChromeDriver();
+        driver.get("http://demo.guru99.com/");
         System.out.println("The user is on login page");
     }
     @When("the user enters the valid credentials")
