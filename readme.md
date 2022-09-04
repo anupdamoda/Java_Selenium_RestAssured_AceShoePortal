@@ -31,4 +31,24 @@ Right-Click on the project and click on 'Create TestNG xml'
 after this testng.xml will be created in the project
 modify the xml little - and then right click on testng.xml 
 
-
+````
+Project
+|-----src
+|      |---main
+       |---src
+           |---java
+           |       |---Page
+           |       |   |---Actions
+           |       |   |    |---GenericActions
+           |       |   |    |---LoginActions
+           |       |   |---Objects
+           |       |   |    |---HomePage
+           |       |   |    |---LoginPage
+           |       |
+           |       |---Runner
+           |       |---StepDefinitions
+           |       |
+           |       |---Utility
+           |       |    |---BrowserDriver
+           |       |    |---Hooks        
+|
