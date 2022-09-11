@@ -50,5 +50,19 @@ Project
            |       |
            |       |---Utility
            |       |    |---BrowserDriver
-           |       |    |---Hooks        
-|
+           |       |    |---Hooks
+````
+
+### Introduce Page object model, Step Definition in Glue & Utility folder
+
+Add the features & step definition path in the glue
+and add the annotations: @RunWith and @CucumberOptions
+
+add the Utility folder which stores the hooks file and Browser driver file
+hooks will be called with before and after annotations
+browser file will be called for instantiating the driver 
+
+Install 'Docker Desktop for Windows'.
+and after installing - verify if the docker is installed
+Command : docker --version
+
